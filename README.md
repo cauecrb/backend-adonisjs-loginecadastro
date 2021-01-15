@@ -2,7 +2,7 @@
 
 Api desenvolvida com adonis que contem um sistema de login através de middleware e com token, utilizando PostgreSQL como banco de dados.
 
-![](../cadastrousuarioinsomnia.png)
+![](cadastrousuarioinsomnia.png)
 
 ## Setup
 

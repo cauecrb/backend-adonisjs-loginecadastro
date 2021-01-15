@@ -1,5 +1,7 @@
 'use strict'
 
+const { RouteResource } = require('@adonisjs/framework/src/Route/Manager')
+
 /*
 |--------------------------------------------------------------------------
 | Routes
@@ -23,4 +25,6 @@ Route.get('/', () => {
 
 Route.post('/cadastraruser', 'UsuarioController.cadastro')
 Route.post('/autenticar', 'UsuarioController.login')
-
+Route.group(() => {
+  Route.resource("produtos", "ProdutoController").apiOnly();
+}).middleware("auth");
